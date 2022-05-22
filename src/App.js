@@ -52,7 +52,13 @@ function App() {
         prevState.sort((a, b) => {
           return b.steps - a.steps;
       });
-      return prevState
+      top10 = prevState.slice(0,10)
+      return top10
+
+      })
+      setTop10LeaderBoard(()=>{
+        let top10 = leaderBoard.slice(0,10)
+        return top10
       })
     }
     
